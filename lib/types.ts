@@ -27,11 +27,12 @@ export type Question = {
 export type PokemonPersona = {
   id: string;
   displayName: string;
+  pokedexNumber?: number;
   vector: Partial<Vec>;
   tags?: string[];
   color?: string;
   art: {
-    kind: "emoji" | "silhouette" | "custom";
+    kind: "emoji" | "silhouette" | "custom" | "sprite";
     src: string;
   };
   flavor: string[];
