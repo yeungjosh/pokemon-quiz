@@ -1,0 +1,130 @@
+[
+  {
+    "id": "pikachu",
+    "displayName": "Pikachu",
+    "vector": {"Electric": 0.95, "Cute": 0.9, "Speed": 0.8, "Team": 0.7, "Day": 0.7},
+    "flavor": ["Loyal sparkplug with zoomies.", "Quick to befriend, quicker to defend.", "Electrifying energy that lights up any room."],
+    "art": {"kind": "emoji", "src": "⚡"},
+    "color": "#F4D03F"
+  },
+  {
+    "id": "charizard",
+    "displayName": "Charizard",
+    "vector": {"Fire": 0.95, "Dragon": 0.6, "Attack": 0.9, "Brave": 0.8, "Solo": 0.7, "Edgy": 0.5},
+    "flavor": ["Winged swagger with a warm heart.", "Fierce loyalty wrapped in flames.", "Soar high, strike hard."],
+    "art": {"kind": "emoji", "src": "🔥"},
+    "color": "#E67E22"
+  },
+  {
+    "id": "blastoise",
+    "displayName": "Blastoise",
+    "vector": {"Water": 0.95, "Defense": 0.9, "Stamina": 0.8, "Calm": 0.7, "Team": 0.6},
+    "flavor": ["Steady fortress with oceanic power.", "Patient strength that never wavers.", "Calm under pressure, unstoppable when needed."],
+    "art": {"kind": "emoji", "src": "💧"},
+    "color": "#3498DB"
+  },
+  {
+    "id": "venusaur",
+    "displayName": "Venusaur",
+    "vector": {"Grass": 0.95, "Defense": 0.7, "Kind": 0.8, "Calm": 0.7, "Day": 0.6},
+    "flavor": ["Nurturing presence with deep roots.", "Growth mindset personified.", "Steady, reliable, life-giving."],
+    "art": {"kind": "emoji", "src": "🍃"},
+    "color": "#27AE60"
+  },
+  {
+    "id": "gengar",
+    "displayName": "Gengar",
+    "vector": {"Ghost": 0.95, "Psychic": 0.6, "Clever": 0.8, "Night": 0.9, "Edgy": 0.7},
+    "flavor": ["Late-night strategist with a mischievous streak.", "Shadows are your playground.", "Clever tricks and dark humor."],
+    "art": {"kind": "emoji", "src": "👻"},
+    "color": "#8E44AD"
+  },
+  {
+    "id": "dragonite",
+    "displayName": "Dragonite",
+    "vector": {"Dragon": 0.95, "Kind": 0.8, "Attack": 0.7, "Speed": 0.6, "Team": 0.7},
+    "flavor": ["Gentle giant with legendary power.", "Fierce protector of the ones you love.", "Kindness backed by raw strength."],
+    "art": {"kind": "emoji", "src": "🐉"},
+    "color": "#F39C12"
+  },
+  {
+    "id": "alakazam",
+    "displayName": "Alakazam",
+    "vector": {"Psychic": 0.95, "Clever": 0.9, "Speed": 0.7, "Solo": 0.6, "Calm": 0.5},
+    "flavor": ["5000 IQ moves only.", "Outsmart problems before they appear.", "Mind over matter, always."],
+    "art": {"kind": "emoji", "src": "🔮"},
+    "color": "#F4D03F"
+  },
+  {
+    "id": "gyarados",
+    "displayName": "Gyarados",
+    "vector": {"Water": 0.8, "Dragon": 0.6, "Attack": 0.9, "Brave": 0.8, "Edgy": 0.7},
+    "flavor": ["Transformed through perseverance.", "Explosive power with dramatic flair.", "Never underestimate the underdog."],
+    "art": {"kind": "emoji", "src": "🌊"},
+    "color": "#3498DB"
+  },
+  {
+    "id": "lapras",
+    "displayName": "Lapras",
+    "vector": {"Water": 0.85, "Ice": 0.7, "Kind": 0.8, "Calm": 0.9, "Team": 0.7},
+    "flavor": ["Gentle soul who carries others.", "Serene strength on still waters.", "Compassionate guide through tough times."],
+    "art": {"kind": "emoji", "src": "🧊"},
+    "color": "#5DADE2"
+  },
+  {
+    "id": "jolteon",
+    "displayName": "Jolteon",
+    "vector": {"Electric": 0.9, "Speed": 0.95, "Solo": 0.6, "Clever": 0.6, "Day": 0.5},
+    "flavor": ["Lightning-fast reflexes and decisions.", "Independent spark that lights its own path.", "Quick to act, quicker to adapt."],
+    "art": {"kind": "emoji", "src": "⚡"},
+    "color": "#F4D03F"
+  },
+  {
+    "id": "umbreon",
+    "displayName": "Umbreon",
+    "vector": {"Dark": 0.9, "Night": 0.95, "Defense": 0.7, "Calm": 0.8, "Edgy": 0.6},
+    "flavor": ["Night owl with mysterious allure.", "Cool composure under moonlight.", "Shadows embrace you like an old friend."],
+    "art": {"kind": "emoji", "src": "🌙"},
+    "color": "#34495E"
+  },
+  {
+    "id": "snorlax",
+    "displayName": "Snorlax",
+    "vector": {"Defense": 0.85, "Stamina": 0.95, "Calm": 0.9, "Cute": 0.6, "Solo": 0.5},
+    "flavor": ["Master of energy conservation.", "Unstoppable when motivated.", "Chill vibes with surprising power."],
+    "art": {"kind": "emoji", "src": "😴"},
+    "color": "#566573"
+  },
+  {
+    "id": "machamp",
+    "displayName": "Machamp",
+    "vector": {"Attack": 0.95, "Stamina": 0.8, "Brave": 0.8, "Team": 0.6, "Day": 0.5},
+    "flavor": ["Four arms, infinite gains.", "Raw power meets disciplined training.", "Never skip leg day or any day."],
+    "art": {"kind": "emoji", "src": "💪"},
+    "color": "#7D8FA0"
+  },
+  {
+    "id": "articuno",
+    "displayName": "Articuno",
+    "vector": {"Ice": 0.95, "Psychic": 0.6, "Calm": 0.85, "Solo": 0.7, "Defense": 0.6},
+    "flavor": ["Elegant grace in frozen perfection.", "Cool-headed wisdom from the peaks.", "Rare beauty with legendary composure."],
+    "art": {"kind": "emoji", "src": "❄️"},
+    "color": "#AED6F1"
+  },
+  {
+    "id": "mewtwo",
+    "displayName": "Mewtwo",
+    "vector": {"Psychic": 0.98, "Attack": 0.9, "Clever": 0.85, "Solo": 0.8, "Edgy": 0.7},
+    "flavor": ["Engineered perfection questioning existence.", "Power tempered by deep contemplation.", "Unmatched strength seeking meaning."],
+    "art": {"kind": "emoji", "src": "🧬"},
+    "color": "#BB8FCE"
+  },
+  {
+    "id": "sylveon",
+    "displayName": "Sylveon",
+    "vector": {"Fairy": 0.95, "Cute": 0.9, "Kind": 0.8, "Calm": 0.7, "Team": 0.7},
+    "flavor": ["Ribbons of kindness that disarm hostility.", "Soft exterior, surprising resilience.", "Spread love like confetti."],
+    "art": {"kind": "emoji", "src": "🎀"},
+    "color": "#F8B4D9"
+  }
+]

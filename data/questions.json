@@ -1,0 +1,102 @@
+[
+  {
+    "id": "q1",
+    "text": "Pick a weekend plan",
+    "choices": [
+      {"id": "A", "label": "Bonfire party", "emoji": "🔥", "delta": {"Fire": 2, "Brave": 1}},
+      {"id": "B", "label": "Beach chill", "emoji": "💧", "delta": {"Water": 2, "Calm": 2}},
+      {"id": "C", "label": "Forest hike", "emoji": "🍃", "delta": {"Grass": 2, "Kind": 1}},
+      {"id": "D", "label": "City arcade", "emoji": "⚡", "delta": {"Electric": 2, "Speed": 1}}
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "How do you handle challenges?",
+    "choices": [
+      {"id": "A", "label": "Charge head-on", "delta": {"Attack": 2, "Brave": 2}},
+      {"id": "B", "label": "Defend and adapt", "delta": {"Defense": 2, "Calm": 1}},
+      {"id": "C", "label": "Outsmart them", "delta": {"Psychic": 2, "Clever": 2}},
+      {"id": "D", "label": "Outlast them", "delta": {"Rock": 2, "Stamina": 2}}
+    ]
+  },
+  {
+    "id": "q3",
+    "text": "What's your ideal superpower?",
+    "choices": [
+      {"id": "A", "label": "Super speed", "delta": {"Speed": 3, "Electric": 1}},
+      {"id": "B", "label": "Mind reading", "delta": {"Psychic": 3, "Clever": 1}},
+      {"id": "C", "label": "Invisibility", "delta": {"Ghost": 3, "Night": 1}},
+      {"id": "D", "label": "Shape-shifting", "delta": {"Water": 2, "Clever": 1}}
+    ]
+  },
+  {
+    "id": "q4",
+    "text": "When do you feel most alive?",
+    "choices": [
+      {"id": "A", "label": "Sunrise workouts", "delta": {"Day": 2, "Speed": 1}},
+      {"id": "B", "label": "Late-night sessions", "delta": {"Night": 2, "Clever": 1}},
+      {"id": "C", "label": "Midday adventures", "delta": {"Day": 1, "Brave": 2}},
+      {"id": "D", "label": "Twilight moments", "delta": {"Ghost": 1, "Calm": 1}}
+    ]
+  },
+  {
+    "id": "q5",
+    "text": "Pick a group role",
+    "choices": [
+      {"id": "A", "label": "Leader", "delta": {"Brave": 2, "Team": 2}},
+      {"id": "B", "label": "Strategist", "delta": {"Clever": 2, "Team": 1}},
+      {"id": "C", "label": "Supporter", "delta": {"Kind": 2, "Team": 2}},
+      {"id": "D", "label": "Solo ace", "delta": {"Solo": 3, "Attack": 1}}
+    ]
+  },
+  {
+    "id": "q6",
+    "text": "What's your aesthetic?",
+    "choices": [
+      {"id": "A", "label": "Soft & cozy", "delta": {"Cute": 2, "Calm": 1}},
+      {"id": "B", "label": "Dark & mysterious", "delta": {"Edgy": 2, "Ghost": 1}},
+      {"id": "C", "label": "Bright & vibrant", "delta": {"Fire": 1, "Day": 2}},
+      {"id": "D", "label": "Natural & earthy", "delta": {"Grass": 2, "Kind": 1}}
+    ]
+  },
+  {
+    "id": "q7",
+    "text": "Pick a battle strategy",
+    "choices": [
+      {"id": "A", "label": "All-out offense", "delta": {"Attack": 3, "Fire": 1}},
+      {"id": "B", "label": "Tank and endure", "delta": {"Defense": 2, "Stamina": 2}},
+      {"id": "C", "label": "Hit-and-run", "delta": {"Speed": 2, "Clever": 1}},
+      {"id": "D", "label": "Status effects", "delta": {"Psychic": 1, "Clever": 2}}
+    ]
+  },
+  {
+    "id": "q8",
+    "text": "What scares you?",
+    "choices": [
+      {"id": "A", "label": "Being trapped", "delta": {"Speed": 2, "Solo": 1}},
+      {"id": "B", "label": "Being forgotten", "delta": {"Team": 2, "Kind": 1}},
+      {"id": "C", "label": "Losing control", "delta": {"Psychic": 2, "Brave": 1}},
+      {"id": "D", "label": "Deep water", "delta": {"Fire": 2, "Rock": 1}}
+    ]
+  },
+  {
+    "id": "q9",
+    "text": "Pick a legendary trait",
+    "choices": [
+      {"id": "A", "label": "Dragon wisdom", "delta": {"Dragon": 3, "Clever": 1}},
+      {"id": "B", "label": "Fairy magic", "delta": {"Fairy": 3, "Cute": 1}},
+      {"id": "C", "label": "Ice resilience", "delta": {"Ice": 3, "Defense": 1}},
+      {"id": "D", "label": "Ghost mystery", "delta": {"Ghost": 3, "Night": 1}}
+    ]
+  },
+  {
+    "id": "q10",
+    "text": "Final question: Your motto?",
+    "choices": [
+      {"id": "A", "label": "Go big or go home", "delta": {"Brave": 2, "Attack": 1}},
+      {"id": "B", "label": "Work smarter, not harder", "delta": {"Clever": 2, "Calm": 1}},
+      {"id": "C", "label": "Together we're stronger", "delta": {"Team": 2, "Kind": 2}},
+      {"id": "D", "label": "I walk my own path", "delta": {"Solo": 2, "Edgy": 1}}
+    ]
+  }
+]
