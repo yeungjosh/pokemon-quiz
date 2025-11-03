@@ -35,6 +35,7 @@ export function ResultCard({ pokemon, result }: ResultCardProps) {
               height={200}
               className="object-contain"
               priority
+              unoptimized
             />
           ) : (
             <span className="text-8xl">{pokemon.art.src}</span>

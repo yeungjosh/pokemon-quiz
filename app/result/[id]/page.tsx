@@ -57,6 +57,7 @@ export default function ResultPage() {
                       width={40}
                       height={40}
                       className="object-contain"
+                      unoptimized
                     />
                   ) : (
                     <span className="text-2xl">{p.art.src}</span>
