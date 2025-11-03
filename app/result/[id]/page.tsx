@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useQuizStore } from '@/lib/store';
 import { ResultCard } from '@/components/ResultCard';
 import { ShareRow } from '@/components/ShareRow';
@@ -51,13 +50,13 @@ export default function ResultPage() {
                   className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700"
                 >
                   {isSprite ? (
-                    <Image
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
                       src={p.art.src}
                       alt={p.displayName}
                       width={40}
                       height={40}
                       className="object-contain"
-                      unoptimized
                     />
                   ) : (
                     <span className="text-2xl">{p.art.src}</span>

@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import type { PokemonPersona, Result } from '@/lib/types';
 
 interface ResultCardProps {
@@ -28,14 +27,13 @@ export function ResultCard({ pokemon, result }: ResultCardProps) {
           className="flex justify-center mb-4"
         >
           {isSprite ? (
-            <Image
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
               src={pokemon.art.src}
               alt={pokemon.displayName}
               width={200}
               height={200}
               className="object-contain"
-              priority
-              unoptimized
             />
           ) : (
             <span className="text-8xl">{pokemon.art.src}</span>
