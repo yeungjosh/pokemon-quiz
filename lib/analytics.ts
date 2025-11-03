@@ -13,15 +13,23 @@ interface EventProps {
   [key: string]: string | number | boolean;
 }
 
+interface PlausibleWindow extends Window {
+  plausible?: (event: string, options: { props?: EventProps }) => void;
+}
+
+interface PostHogWindow extends Window {
+  posthog?: { capture: (event: string, props?: EventProps) => void };
+}
+
 export function track(name: EventName, props?: EventProps) {
   // Plausible integration
-  if (typeof window !== 'undefined' && (window as any).plausible) {
-    (window as any).plausible(name, { props });
+  if (typeof window !== 'undefined' && (window as PlausibleWindow).plausible) {
+    (window as PlausibleWindow).plausible?.(name, { props });
   }
 
   // PostHog integration (optional)
-  if (typeof window !== 'undefined' && (window as any).posthog) {
-    (window as any).posthog.capture(name, props);
+  if (typeof window !== 'undefined' && (window as PostHogWindow).posthog) {
+    (window as PostHogWindow).posthog?.capture(name, props);
   }
 
   // Console log in development

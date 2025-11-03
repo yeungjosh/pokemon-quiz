@@ -1,13 +1,16 @@
 import { ImageResponse } from '@vercel/og';
 import pokemon from '@/data/pokemon.json';
+import type { PokemonPersona } from '@/lib/types';
 
 export const runtime = 'edge';
+
+const POKEDEX = pokemon as PokemonPersona[];
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const id = searchParams.get('id');
 
-  const pk = pokemon.find((p: any) => p.id === id);
+  const pk = POKEDEX.find((p) => p.id === id);
   if (!pk) {
     return new Response('Pokemon not found', { status: 404 });
   }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface ShareRowProps {
   pokemonId: string;
@@ -31,12 +32,12 @@ export function ShareRow({ pokemonId }: ShareRowProps) {
       >
         {copied ? 'Copied!' : 'Share Result'}
       </button>
-      <a
+      <Link
         href="/"
         className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl font-semibold hover:border-blue-500 transition-all"
       >
         Try Again
-      </a>
+      </Link>
     </div>
   );
 }

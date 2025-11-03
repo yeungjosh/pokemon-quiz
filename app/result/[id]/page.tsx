@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useQuizStore } from '@/lib/store';
 import { ResultCard } from '@/components/ResultCard';
 import { ShareRow } from '@/components/ShareRow';
@@ -9,7 +10,7 @@ import type { PokemonPersona } from '@/lib/types';
 
 const POKEDEX = pokemon as PokemonPersona[];
 
-export default function ResultPage({ params }: { params: { id: string } }) {
+export default function ResultPage() {
   const { result } = useQuizStore();
   const [mounted, setMounted] = useState(false);
 
@@ -22,7 +23,7 @@ export default function ResultPage({ params }: { params: { id: string } }) {
       <main className="min-h-screen flex items-center justify-center p-8 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800">
         <div className="text-center">
           <p className="text-xl mb-4">No quiz results found</p>
-          <a href="/" className="text-blue-600 hover:underline">Take the quiz</a>
+          <Link href="/" className="text-blue-600 hover:underline">Take the quiz</Link>
         </div>
       </main>
     );
@@ -39,7 +40,7 @@ export default function ResultPage({ params }: { params: { id: string } }) {
         <div className="text-center mb-6">
           <h3 className="text-lg font-semibold mb-4">Your Top Matches</h3>
           <div className="flex gap-3 justify-center flex-wrap">
-            {result.top3.map((match, i) => {
+            {result.top3.map((match) => {
               const p = POKEDEX.find(pk => pk.id === match.pokemonId);
               return (
                 <div
