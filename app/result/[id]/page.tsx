@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useQuizStore } from '@/lib/store';
 import { ResultCard } from '@/components/ResultCard';
 import { ShareRow } from '@/components/ShareRow';
@@ -42,14 +43,26 @@ export default function ResultPage() {
           <div className="flex gap-3 justify-center flex-wrap">
             {result.top3.map((match) => {
               const p = POKEDEX.find(pk => pk.id === match.pokemonId);
+              if (!p) return null;
+              const isSprite = p.art.kind === 'sprite';
               return (
                 <div
                   key={match.pokemonId}
-                  className="px-4 py-2 bg-white dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700"
+                  className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700"
                 >
-                  <span className="mr-2">{p?.art.src}</span>
-                  <span className="font-semibold">{p?.displayName}</span>
-                  <span className="text-sm text-gray-500 ml-2">{(match.score * 100).toFixed(0)}%</span>
+                  {isSprite ? (
+                    <Image
+                      src={p.art.src}
+                      alt={p.displayName}
+                      width={40}
+                      height={40}
+                      className="object-contain"
+                    />
+                  ) : (
+                    <span className="text-2xl">{p.art.src}</span>
+                  )}
+                  <span className="font-semibold">{p.displayName}</span>
+                  <span className="text-sm text-gray-500">{(match.score * 100).toFixed(0)}%</span>
                 </div>
               );
             })}
