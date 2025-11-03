@@ -1,102 +1,105 @@
 [
   {
     "id": "q1",
-    "text": "Pick a weekend plan",
+    "text": "You find a mysterious dungeon. What's your move?",
+    "helper": "Adventure awaits...",
     "choices": [
-      {"id": "A", "label": "Bonfire party", "emoji": "🔥", "delta": {"Fire": 2, "Brave": 1}},
-      {"id": "B", "label": "Beach chill", "emoji": "💧", "delta": {"Water": 2, "Calm": 2}},
-      {"id": "C", "label": "Forest hike", "emoji": "🍃", "delta": {"Grass": 2, "Kind": 1}},
-      {"id": "D", "label": "City arcade", "emoji": "⚡", "delta": {"Electric": 2, "Speed": 1}}
+      {"id": "A", "label": "Rush in, fists blazing!", "emoji": "🔥", "delta": {"Fire": 2, "Brave": 2, "Attack": 1}},
+      {"id": "B", "label": "Map it out first", "emoji": "🗺️", "delta": {"Psychic": 2, "Clever": 2}},
+      {"id": "C", "label": "Bring the whole squad", "emoji": "👥", "delta": {"Team": 3, "Kind": 1}},
+      {"id": "D", "label": "Sneak in at night", "emoji": "🌙", "delta": {"Ghost": 2, "Night": 2, "Clever": 1}}
     ]
   },
   {
     "id": "q2",
-    "text": "How do you handle challenges?",
+    "text": "Free pizza appears. There's only one slice left. What do you do?",
     "choices": [
-      {"id": "A", "label": "Charge head-on", "delta": {"Attack": 2, "Brave": 2}},
-      {"id": "B", "label": "Defend and adapt", "delta": {"Defense": 2, "Calm": 1}},
-      {"id": "C", "label": "Outsmart them", "delta": {"Psychic": 2, "Clever": 2}},
-      {"id": "D", "label": "Outlast them", "delta": {"Rock": 2, "Stamina": 2}}
+      {"id": "A", "label": "Grab it before it's gone!", "delta": {"Speed": 3, "Solo": 1}},
+      {"id": "B", "label": "Split it with someone", "delta": {"Kind": 3, "Team": 2}},
+      {"id": "C", "label": "Offer it to the hungriest person", "delta": {"Kind": 2, "Calm": 1}},
+      {"id": "D", "label": "I already ate 5 slices earlier", "delta": {"Stamina": 2, "Calm": 1}}
     ]
   },
   {
     "id": "q3",
-    "text": "What's your ideal superpower?",
+    "text": "Your phone dies at 3am. What happens?",
     "choices": [
-      {"id": "A", "label": "Super speed", "delta": {"Speed": 3, "Electric": 1}},
-      {"id": "B", "label": "Mind reading", "delta": {"Psychic": 3, "Clever": 1}},
-      {"id": "C", "label": "Invisibility", "delta": {"Ghost": 3, "Night": 1}},
-      {"id": "D", "label": "Shape-shifting", "delta": {"Water": 2, "Clever": 1}}
+      {"id": "A", "label": "Panic - I need it NOW", "emoji": "⚡", "delta": {"Electric": 2, "Speed": 2}},
+      {"id": "B", "label": "Finally read that book", "emoji": "📚", "delta": {"Psychic": 2, "Calm": 2}},
+      {"id": "C", "label": "Time to sleep anyway", "emoji": "😴", "delta": {"Calm": 3, "Night": 1}},
+      {"id": "D", "label": "Go on a spontaneous walk", "emoji": "🌙", "delta": {"Night": 2, "Brave": 1, "Solo": 1}}
     ]
   },
   {
     "id": "q4",
-    "text": "When do you feel most alive?",
+    "text": "A wild Karen appears and demands to speak to your manager!",
+    "helper": "How do you respond?",
     "choices": [
-      {"id": "A", "label": "Sunrise workouts", "delta": {"Day": 2, "Speed": 1}},
-      {"id": "B", "label": "Late-night sessions", "delta": {"Night": 2, "Clever": 1}},
-      {"id": "C", "label": "Midday adventures", "delta": {"Day": 1, "Brave": 2}},
-      {"id": "D", "label": "Twilight moments", "delta": {"Ghost": 1, "Calm": 1}}
+      {"id": "A", "label": "I AM the manager", "emoji": "💼", "delta": {"Brave": 3, "Solo": 1}},
+      {"id": "B", "label": "Stay calm, de-escalate", "emoji": "😌", "delta": {"Calm": 3, "Clever": 1}},
+      {"id": "C", "label": "Get backup immediately", "emoji": "📞", "delta": {"Team": 2, "Defense": 1}},
+      {"id": "D", "label": "Vanish into the stockroom", "emoji": "👻", "delta": {"Ghost": 2, "Clever": 2}}
     ]
   },
   {
     "id": "q5",
-    "text": "Pick a group role",
+    "text": "You're in a group project. What's your vibe?",
     "choices": [
-      {"id": "A", "label": "Leader", "delta": {"Brave": 2, "Team": 2}},
-      {"id": "B", "label": "Strategist", "delta": {"Clever": 2, "Team": 1}},
-      {"id": "C", "label": "Supporter", "delta": {"Kind": 2, "Team": 2}},
-      {"id": "D", "label": "Solo ace", "delta": {"Solo": 3, "Attack": 1}}
+      {"id": "A", "label": "Take charge, organize everything", "delta": {"Brave": 2, "Team": 2, "Attack": 1}},
+      {"id": "B", "label": "Master strategist in the back", "delta": {"Clever": 3, "Team": 1}},
+      {"id": "C", "label": "Supportive cheerleader", "delta": {"Kind": 3, "Team": 2}},
+      {"id": "D", "label": "Do my part, don't need drama", "delta": {"Solo": 3, "Calm": 1}}
     ]
   },
   {
     "id": "q6",
-    "text": "What's your aesthetic?",
+    "text": "It's game night. What are we playing?",
     "choices": [
-      {"id": "A", "label": "Soft & cozy", "delta": {"Cute": 2, "Calm": 1}},
-      {"id": "B", "label": "Dark & mysterious", "delta": {"Edgy": 2, "Ghost": 1}},
-      {"id": "C", "label": "Bright & vibrant", "delta": {"Fire": 1, "Day": 2}},
-      {"id": "D", "label": "Natural & earthy", "delta": {"Grass": 2, "Kind": 1}}
+      {"id": "A", "label": "Smash Bros - button mashing!", "emoji": "🎮", "delta": {"Attack": 2, "Speed": 2}},
+      {"id": "B", "label": "Catan - big brain moves", "emoji": "🧠", "delta": {"Clever": 3, "Calm": 1}},
+      {"id": "C", "label": "Mario Party - chaos mode", "emoji": "🎲", "delta": {"Team": 2, "Cute": 1}},
+      {"id": "D", "label": "Dark Souls - suffer together", "emoji": "⚔️", "delta": {"Brave": 2, "Stamina": 2}}
     ]
   },
   {
     "id": "q7",
-    "text": "Pick a battle strategy",
+    "text": "You're building a blanket fort. What's the priority?",
     "choices": [
-      {"id": "A", "label": "All-out offense", "delta": {"Attack": 3, "Fire": 1}},
-      {"id": "B", "label": "Tank and endure", "delta": {"Defense": 2, "Stamina": 2}},
-      {"id": "C", "label": "Hit-and-run", "delta": {"Speed": 2, "Clever": 1}},
-      {"id": "D", "label": "Status effects", "delta": {"Psychic": 1, "Clever": 2}}
+      {"id": "A", "label": "MAXIMUM DEFENSE", "emoji": "🏰", "delta": {"Defense": 3, "Rock": 1}},
+      {"id": "B", "label": "Cozy vibes only", "emoji": "🛋️", "delta": {"Cute": 2, "Calm": 2}},
+      {"id": "C", "label": "Strategic exit routes", "emoji": "🗺️", "delta": {"Clever": 2, "Speed": 1}},
+      {"id": "D", "label": "Room for the whole crew", "emoji": "👨‍👩‍👧‍👦", "delta": {"Kind": 2, "Team": 2}}
     ]
   },
   {
     "id": "q8",
-    "text": "What scares you?",
+    "text": "The WiFi goes out. Your reaction?",
     "choices": [
-      {"id": "A", "label": "Being trapped", "delta": {"Speed": 2, "Solo": 1}},
-      {"id": "B", "label": "Being forgotten", "delta": {"Team": 2, "Kind": 1}},
-      {"id": "C", "label": "Losing control", "delta": {"Psychic": 2, "Brave": 1}},
-      {"id": "D", "label": "Deep water", "delta": {"Fire": 2, "Rock": 1}}
+      {"id": "A", "label": "FIX IT IMMEDIATELY", "emoji": "⚡", "delta": {"Electric": 2, "Speed": 2}},
+      {"id": "B", "label": "Time for a nap", "emoji": "💤", "delta": {"Calm": 3, "Defense": 1}},
+      {"id": "C", "label": "Go touch grass", "emoji": "🌳", "delta": {"Grass": 2, "Day": 1}},
+      {"id": "D", "label": "Ominous silence...", "emoji": "😐", "delta": {"Ghost": 2, "Night": 1}}
     ]
   },
   {
     "id": "q9",
-    "text": "Pick a legendary trait",
+    "text": "Someone's crying in public. What do you do?",
     "choices": [
-      {"id": "A", "label": "Dragon wisdom", "delta": {"Dragon": 3, "Clever": 1}},
-      {"id": "B", "label": "Fairy magic", "delta": {"Fairy": 3, "Cute": 1}},
-      {"id": "C", "label": "Ice resilience", "delta": {"Ice": 3, "Defense": 1}},
-      {"id": "D", "label": "Ghost mystery", "delta": {"Ghost": 3, "Night": 1}}
+      {"id": "A", "label": "Offer tissues and a hug", "emoji": "🤗", "delta": {"Kind": 3, "Team": 1}},
+      {"id": "B", "label": "Give them space, check from afar", "emoji": "👀", "delta": {"Calm": 2, "Clever": 1}},
+      {"id": "C", "label": "Ask if they need help", "emoji": "❓", "delta": {"Kind": 2, "Brave": 1}},
+      {"id": "D", "label": "Pretend I didn't see anything", "emoji": "🙈", "delta": {"Solo": 2, "Edgy": 1}}
     ]
   },
   {
     "id": "q10",
-    "text": "Final question: Your motto?",
+    "text": "Final boss music starts playing. What's your response?",
+    "helper": "This is it!",
     "choices": [
-      {"id": "A", "label": "Go big or go home", "delta": {"Brave": 2, "Attack": 1}},
-      {"id": "B", "label": "Work smarter, not harder", "delta": {"Clever": 2, "Calm": 1}},
-      {"id": "C", "label": "Together we're stronger", "delta": {"Team": 2, "Kind": 2}},
-      {"id": "D", "label": "I walk my own path", "delta": {"Solo": 2, "Edgy": 1}}
+      {"id": "A", "label": "LET'S GOOOO", "emoji": "💪", "delta": {"Brave": 3, "Attack": 2}},
+      {"id": "B", "label": "Time to out-think them", "emoji": "🧠", "delta": {"Clever": 3, "Psychic": 1}},
+      {"id": "C", "label": "Rally the team first", "emoji": "📣", "delta": {"Team": 3, "Kind": 1}},
+      {"id": "D", "label": "I've been preparing for this", "emoji": "📋", "delta": {"Stamina": 2, "Defense": 2}}
     ]
   }
 ]

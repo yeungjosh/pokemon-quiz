@@ -15,6 +15,8 @@ export async function GET(request: Request) {
     return new Response('Pokemon not found', { status: 404 });
   }
 
+  const isSprite = pk.art.kind === 'sprite';
+
   return new ImageResponse(
     (
       <div
@@ -40,7 +42,18 @@ export async function GET(request: Request) {
             boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
           }}
         >
-          <div style={{ fontSize: 120, marginBottom: 20 }}>{pk.art.src}</div>
+          {isSprite ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={pk.art.src}
+              alt={pk.displayName}
+              width="200"
+              height="200"
+              style={{ marginBottom: 20 }}
+            />
+          ) : (
+            <div style={{ fontSize: 120, marginBottom: 20 }}>{pk.art.src}</div>
+          )}
           <div style={{ fontSize: 48, fontWeight: 'bold', marginBottom: 10 }}>
             You&apos;re {pk.displayName}!
           </div>

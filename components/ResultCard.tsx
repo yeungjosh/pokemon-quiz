@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import type { PokemonPersona, Result } from '@/lib/types';
 
 interface ResultCardProps {
@@ -9,6 +10,8 @@ interface ResultCardProps {
 }
 
 export function ResultCard({ pokemon, result }: ResultCardProps) {
+  const isSprite = pokemon.art.kind === 'sprite';
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -22,9 +25,20 @@ export function ResultCard({ pokemon, result }: ResultCardProps) {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-          className="text-8xl mb-4"
+          className="flex justify-center mb-4"
         >
-          {pokemon.art.src}
+          {isSprite ? (
+            <Image
+              src={pokemon.art.src}
+              alt={pokemon.displayName}
+              width={200}
+              height={200}
+              className="object-contain"
+              priority
+            />
+          ) : (
+            <span className="text-8xl">{pokemon.art.src}</span>
+          )}
         </motion.div>
 
         <h1 className="text-4xl font-bold mb-2">{result.tagline}</h1>
